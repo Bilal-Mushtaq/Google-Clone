@@ -1,12 +1,12 @@
-
 html {
     height: 100%;
     font-size: 100%;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 body {
-    font: 13px arial,sans-serif;
+    font: 13px arial, sans-serif;
 }
 
 /* ------- Nav Items ------- */
@@ -15,7 +15,9 @@ ul {
     padding: 4px;
     line-height: 0px;
 }
-
+nav ul {
+    margin-top: 7px;
+}
 li {
     display: inline-block;
     padding: 5px 7px;
@@ -48,16 +50,24 @@ nav ul li a:hover {
     padding-right: 8px;
 }
 
+.apps-bar:hover {
+    background-color: #b1adad;
+    border-radius: 80%;
+    opacity: 75%;
+}
+
 .apps {
     width: 16px;
     height: 16px;
     margin-top: -2px;
-    padding-right: 9px;
+    /* padding-right: 9px; */
     opacity: 0.75;
+    padding: 5px;
 }
 
 .apps:hover {
     opacity: 1;
+    background-color: #b1adad;
 }
 
 /* ------- Sign In Button ------- */
@@ -117,9 +127,11 @@ nav ul li a:hover {
     height: 42px;
     border: .7px solid #E4E4E4;
     background-color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     outline: none;
-    text-indent: 15px;
+    text-indent: 40px;
+    font-size: 17px;
+    font-weight: lighter;
 }
 
 .search_bar:hover,
@@ -131,19 +143,22 @@ nav ul li a:hover {
     box-shadow: 0px 3px 8px #E4E4E4;
     outline: none;
 }
+
 .search-icon {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     position: relative;
     left: 15px;
-    top: 35px;
+    top: 32px;
 }
+
 .mic {
     width: 14px;
     height: 20px;
     position: relative;
     left: 535px;
     top: 34px;
+    cursor: pointer;
 }
 
 .submit_buttons {
@@ -159,7 +174,7 @@ nav ul li a:hover {
     font-family: arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
-    margin: 11px 4px;
+    margin: 10px 4px;
     min-width: 54px;
     padding: 0 16px;
     text-align: center;
@@ -182,7 +197,6 @@ nav ul li a:hover {
 #Bottomdiv {
     display: flex;
     font-size: 12px;
-    margin-top: 1%;
     align-items: center;
     font-weight: 400;
 }
@@ -190,14 +204,17 @@ nav ul li a:hover {
 #Bottomdiv span {
     margin-left: 31%;
     color: #4d5156;
-    font-size: 14px;
+    font-size: 13px;
 }
+
 #Bottomdiv ul {
     margin-left: 5px;
 }
+
 #Bottomdiv ul li {
-    padding: 6px 2px; 
+    padding: 6px 2px;
 }
+
 #Bottomdiv ul li a {
     list-style: none;
     text-decoration: none;
@@ -210,10 +227,21 @@ nav ul li a:hover {
 /* ------- Footer ------- */
 .l_ftr {
     float: left;
+    margin-left: 5px;
+    padding: 3px 0px 11px 6px;
 }
-
+.l_ftr a {
+    padding: 10px 0px 35px 25px;
+    font-size: 14px;
+}
 .r_ftr {
     float: right;
+    margin-top: 0px;
+    padding: 4px 0px 11px 0px;
+}
+.r_ftr a {
+    padding: 10px 0px 35px 25px;
+    font-size: 14px;
 }
 
 footer {
@@ -221,26 +249,87 @@ footer {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -5px;
     color: #666666;
     background-color: #f2f2f2;
-    border-top: solid 1px #e4e4e4;
 }
+
 .upr-ftr {
-    border-bottom: 1px solid #dadce0;
-    height: 22px;
+    padding: 9px 10px 9px 5px;
+}
+.upr-ftr a {
+    padding-top: 2px;
+    padding: 15px 0px 35px 25px;
+    font-size: 15px;
 }
 footer a {
     text-decoration: none;
     color: #70757a;
-    font-size: 14px;
-    padding: 20px 5px 15px 35px;
 }
+
 footer li {
     padding: 0;
 }
+
 footer a:hover {
     text-decoration-line: underline;
+}
+
+.ftr-hr {
+    opacity: 30%;
+}
+
+.dropbtn {
+    color: #70757a;
+    font-size: 14px;
+    border: none;
+    padding: 0px 35px 0px 25px;
+}
+
+.dropup {
+    position: relative;
+    display: inline-block;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    bottom: 28px;
+    right: 20px;
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.dropup-content a {
+    color: black;
+    padding: 16px 17px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+.dropup-content a:hover {
+    text-decoration: none;
+}
+footer hr {
+    opacity: 50%;
+}
+.dropup-content a:hover {
+    background-color: #ccc;
+}
+.dropup:hover .dropup-content {
+    display: block;
+}
+.dropup:active .dropup-content {
+    display: block;
+}
+.dropup:hover .dropbtn {
+    text-decoration-line: underline;
+    cursor: pointer;
 }
 
 /*    Responsive Design    */
@@ -250,6 +339,7 @@ footer a:hover {
         padding: 15px 5px 10px 15px;
     }
 }
+
 /*   responsive design for screens less than 630px */
 
 @media only screen and (max-width: 630px) {
@@ -257,69 +347,103 @@ footer a:hover {
         height: 82px;
         width: 240px;
     }
+
     .mic {
         left: 350px;
         top: 35px;
     }
+
     .search_bar {
         width: 400px;
         height: 40px;
     }
+
     .submit_buttons {
         font-size: 12px;
         left: 17%;
     }
+
     #Bottomdiv span {
         margin-left: 22%;
         font-size: 12px;
     }
+
     footer a {
         font-size: 10px;
         padding: 10px 10px 10px 15px;
     }
-    /*   responsive design for screens less than 480px */
+
     @media only screen and (max-width: 480px) {
         .mic {
             left: 330px;
         }
+
         .search_bar {
             width: 380px;
         }
+
         footer a {
             padding: 10px 5px 10px 10px;
             font-size: 8px;
         }
+        .r_ftr a {
+            font-size: 10px;
+        }
+        .l_ftr a {
+            padding: 10px 5px 10px 10px;
+            font-size: 10px;
+        }
+        .dropbtn {
+            font-size: 10px;
+        }
     }
-    /*   responsive design for screens less than 380px */
+
     @media only screen and (max-width: 380px) {
         .logo {
             height: 60px;
             width: 175px;
         }
+
         .mic {
             left: 195px;
             top: 35px;
         }
+
         .search_bar {
             width: 240px;
             height: 35px;
         }
+
         .submit_buttons {
             font-size: 10px;
             left: 6%;
         }
+
         #Bottomdiv span {
             margin-left: 13%;
             font-size: 10px;
         }
+
         #Bottomdiv ul li {
             padding: 5px 1px;
         }
+
         #Bottomdiv ul li a {
             font-size: 10px;
         }
+
         .r_ftr {
             float: left;
+        }
+        .r_ftr a {
+            font-size: 10px;
+        }
+        .l_ftr a {
+            padding: 10px 5px 10px 10px;
+            font-size: 10px;
+        }
+        .dropbtn {
+            font-size: 10px;
         }
     }
 }

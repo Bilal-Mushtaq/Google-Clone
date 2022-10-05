@@ -1,58 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google.com</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google.com</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav>  
-            <ul class="r_nav">  
-             <li><a href="#">Gmail</a></li>  
-             <li><a href="#">Images</a></li>  
-             <li><a href="#"><img class="apps" src="https://thumb.ibb.co/gykLCw/grid_menu.png"></a></li>  
-             <li class="sign_in"><a href="#">Sign in</a></li>  
-            </ul>  
-           </nav>
-           <section class="cntr_pg">  
-            <img class="logo" src="./img/google.png" alt="Google logo" />  
-            <img class="search-icon" src="./img/search-icon.png" alt="">
-            <img class="mic" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Google_microphone_logo.png" alt="" />  
-            <form action="#" method="#" name="searchquery">  
-             <input type="text" name="searchfield" class="search_bar"></input>  
-             <div class="search_buttons">  
-              <input class="submit_buttons" type="submit" value="Google Search" name="submit">  
-              <input class="submit_buttons" type="submit" value="I'm Feeling Lucky" name="feelinglucky"></input>  
-             </div>  
-            </form>  
-            <div id="Bottomdiv">
-             <span>Google offered in:</span>
-             <ul>
-               <li><a href="">Urdu</a></li>
-               <li><a href="">Pashhto</a></li>
-               <li><a href="">sindhi</a></li>
-             </ul>
-           </div>
-           </section>
-           <footer>
-            <ul class="upr-ftr">
-              <li><a href="#">Pakistan</a></li>
-            </ul>  
-            <ul class="l_ftr">  
-             <li><a href="#">About</a></li>
-             <li><a href="#">Advertising</a></li>
-             <li><a href="#">Business</a></li>  
-             <li><a href="#">How Search Works</a></li>    
-            </ul>  
-            <ul class="r_ftr">  
-             <li><a href="#">Privacy</a></li>  
-             <li><a href="#">Terms</a></li>  
-             <li><a href="#">Settings</a></li>  
-            </ul>  
-           </footer>  
-    </header>
+  <header>
+    <nav>
+      <ul class="r_nav">
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">Images</a></li>
+        <li class="apps-bar"><a href="#"><img class="apps" src="https://thumb.ibb.co/gykLCw/grid_menu.png"></a></li>
+        <li class="sign_in"><a href="#">Sign in</a></li>
+      </ul>
+    </nav>
+    <section class="cntr_pg">
+      <img class="logo" src="./img/google.png" alt="Google logo" />
+      <img class="search-icon" src="./img/search-icon.png" alt="">
+      <img class="mic" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Google_microphone_logo.png" alt="" />
+      <form action="#" method="#" name="searchquery">
+        <input type="text" name="searchfield" class="search_bar"></input>
+        <div class="search_buttons">
+          <input class="submit_buttons" type="submit" value="Google Search" name="submit">
+          <input class="submit_buttons" type="submit" value="I'm Feeling Lucky" name="feelinglucky"></input>
+        </div>
+      </form>
+      <div id="Bottomdiv">
+        <span>Google offered in:</span>
+        <ul>
+          <li><a href="">سنڌي</a></li>
+          <li><a href="">پښتو</a></li>
+          <li><a href="">اردو</a></li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <ul class="upr-ftr">
+        <li><a href="#">Pakistan</a></li>
+      </ul>
+      <hr class="ftr-hr">
+      <div>
+        <ul class="l_ftr">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">How Search works</a></li>
+        </ul>
+        <ul class="r_ftr">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <!-- <li><a href="#">Settings</a></li> -->
+          <div class="dropup">
+            <button class="dropbtn">Settings</button>
+            <div class="dropup-content">
+              <a href="#">Search Settings</a>
+              <a href="#">Advance Search</a>
+              <a href="#">Your Data in Search</a>
+              <a href="#">Search history</a>
+              <a href="#">Search help</a>
+              <a href="#">Send feedback</a>
+              <hr>
+              <a href="#">Dark theme: Off</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </footer>
+  </header>
 </body>
+
 </html>
