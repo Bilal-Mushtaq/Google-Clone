@@ -34,12 +34,11 @@ nav img {
 nav a {
     text-decoration: none;
     color: #000;
-    opacity: 0.75;
 }
 
 nav ul li a:hover {
     text-decoration-line: underline;
-    opacity: 0.65;
+    /* opacity: 0.65; */
 }
 
 /* ------- Right Nav Items ------- */
@@ -51,9 +50,8 @@ nav ul li a:hover {
 }
 
 .apps-bar:hover {
-    background-color: #b1adad;
+    background-color: rgba(60,64,67,.08);
     border-radius: 80%;
-    opacity: 75%;
 }
 
 .apps {
@@ -67,7 +65,6 @@ nav ul li a:hover {
 
 .apps:hover {
     opacity: 1;
-    background-color: #b1adad;
 }
 
 /* ------- Sign In Button ------- */
@@ -101,7 +98,7 @@ nav ul li a:hover {
 /* ------- Center Conte ------- */
 .cntr_pg {
     position: absolute;
-    top: 43%;
+    top: 42%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -113,6 +110,7 @@ nav ul li a:hover {
     width: 272px;
     display: block;
     margin: auto;
+    margin-bottom: 8px;
 }
 
 .form {
@@ -122,13 +120,12 @@ nav ul li a:hover {
 
 .search_bar {
     border-radius: 40px;
-    width: 585px;
+    width: 580px;
     margin: auto;
     height: 42px;
-    border: .7px solid #E4E4E4;
+    border: 1.5px solid #E4E4E4;
     background-color: #fff;
-    margin-bottom: 18px;
-    outline: none;
+    margin-bottom: 15px;
     text-indent: 40px;
     font-size: 17px;
     font-weight: lighter;
@@ -157,7 +154,7 @@ nav ul li a:hover {
     height: 20px;
     position: relative;
     left: 535px;
-    top: 34px;
+    top: 36px;
     cursor: pointer;
 }
 
@@ -202,7 +199,7 @@ nav ul li a:hover {
 }
 
 #Bottomdiv span {
-    margin-left: 31%;
+    margin-left: 33%;
     color: #4d5156;
     font-size: 13px;
 }
@@ -261,6 +258,9 @@ footer {
     padding-top: 2px;
     padding: 15px 0px 35px 25px;
     font-size: 15px;
+}
+.upr-ftr a:hover {
+    text-decoration-line: none;
 }
 footer a {
     text-decoration: none;
@@ -357,7 +357,9 @@ footer hr {
         width: 400px;
         height: 40px;
     }
-
+    .search_bar:hover, .search_bar:active {
+        width: 395px;
+    }
     .submit_buttons {
         font-size: 12px;
         left: 17%;
@@ -375,13 +377,15 @@ footer hr {
 
     @media only screen and (max-width: 480px) {
         .mic {
-            left: 330px;
+            left: 331px;
         }
 
         .search_bar {
             width: 380px;
         }
-
+        .search_bar:hover, .search_bar:active {
+            width: 373px;
+        }
         footer a {
             padding: 10px 5px 10px 10px;
             font-size: 8px;
@@ -405,18 +409,20 @@ footer hr {
         }
 
         .mic {
-            left: 195px;
-            top: 35px;
+            left: 180px;
+            top: 33px;
         }
 
         .search_bar {
-            width: 240px;
+            width: 220px;
             height: 35px;
         }
-
+        .search_bar:hover, .search_bar:active {
+            width: 236px;
+        }
         .submit_buttons {
-            font-size: 10px;
-            left: 6%;
+            font-size: 9px;
+            left: 0%;
         }
 
         #Bottomdiv span {
