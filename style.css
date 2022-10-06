@@ -143,11 +143,11 @@ nav ul li a:hover {
 }
 
 .search-icon {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
     position: relative;
     left: 17px;
-    top: 35px;
+    top: 33px;
 }
 
 .mic {
