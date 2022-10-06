@@ -98,7 +98,7 @@ nav ul li a:hover {
 /* ------- Center Conte ------- */
 .cntr_pg {
     position: absolute;
-    top: 42%;
+    top: 43%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -110,7 +110,6 @@ nav ul li a:hover {
     width: 272px;
     display: block;
     margin: auto;
-    margin-bottom: 8px;
 }
 
 .form {
@@ -122,13 +121,15 @@ nav ul li a:hover {
     border-radius: 40px;
     width: 580px;
     margin: auto;
-    height: 42px;
-    border: 1.5px solid #E4E4E4;
+    height: 43px;
+    border: .7px solid #E4E4E4;
     background-color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     text-indent: 40px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: lighter;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
 }
 
 .search_bar:hover,
@@ -136,25 +137,25 @@ nav ul li a:hover {
     padding-bottom: 2px;
     padding-top: 1px;
     margin-top: -1px;
-    width: 585px;
+    width: 580px;
     box-shadow: 0px 3px 8px #E4E4E4;
     outline: none;
 }
 
 .search-icon {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     position: relative;
-    left: 15px;
-    top: 32px;
+    left: 17px;
+    top: 35px;
 }
 
 .mic {
     width: 14px;
     height: 20px;
     position: relative;
-    left: 535px;
-    top: 36px;
+    left: 531px;
+    top: 37px;
     cursor: pointer;
 }
 
@@ -171,7 +172,7 @@ nav ul li a:hover {
     font-family: arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
-    margin: 10px 4px;
+    margin: 13px 4px;
     min-width: 54px;
     padding: 0 16px;
     text-align: center;
@@ -374,10 +375,12 @@ footer hr {
         font-size: 10px;
         padding: 10px 10px 10px 15px;
     }
-
+    
+    /*   responsive design for screens less than 480px */
     @media only screen and (max-width: 480px) {
         .mic {
             left: 331px;
+            height: 20px;
         }
 
         .search_bar {
@@ -401,7 +404,8 @@ footer hr {
             font-size: 10px;
         }
     }
-
+    
+    /*   responsive design for screens less than 380px */
     @media only screen and (max-width: 380px) {
         .logo {
             height: 60px;
@@ -409,7 +413,7 @@ footer hr {
         }
 
         .mic {
-            left: 180px;
+            left: 177px;
             top: 33px;
         }
 
@@ -424,7 +428,9 @@ footer hr {
             font-size: 9px;
             left: 0%;
         }
-
+        .search-icon {
+            top: 30px;
+        }
         #Bottomdiv span {
             margin-left: 13%;
             font-size: 10px;
